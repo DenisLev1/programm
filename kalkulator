@@ -1,1 +1,359 @@
+#include <iostream> 
+#include <clocale> 
+using namespace std;
 
+
+int sum(int perv1,int vtor1,int konech1) 
+{ 
+setlocale(LC_ALL, "rus"); 
+konech1 = a + b; 
+cout << "Îòâåò" << endl; 
+cout << konech1 << " " << endl; 
+
+switch (konech1 / 1000) 
+{ 
+case 1: cout << "Îäíà Òûñÿ÷à "; break; 
+case 2: cout << "Äâå Òûñÿ÷è "; break; 
+case 3: cout << "Òðè Òûñÿ÷è "; break; 
+case 4: cout << "×åòûðå Òûñÿ÷è "; break; 
+case 5: cout << "Ïÿòü Òûñÿ÷ "; break; 
+case 6: cout << "Øåñòü Òûñÿ÷ "; break; 
+case 7: cout << "Ñåìü Òûñÿ÷ "; break; 
+case 8: cout << "Âîñåìü Òûñÿ÷ "; break; 
+case 9: cout << "Äåâÿòü Òûñÿ÷ "; break; 
+} 
+
+switch ((konech1 % 1000) / 100 ) 
+{ 
+case 1: cout << "Ñòî "; break; 
+case 2: cout << "Äâåñòè "; break; 
+case 3: cout << "Òðèñòà "; break; 
+case 4: cout << "×åòûðåñòà "; break; 
+case 5: cout << "Ïÿòñîò "; break; 
+case 6: cout << "Øåñîò "; break; 
+case 7: cout << "Ñåìüñîò "; break; 
+case 8: cout << "Âîñåìüñîò "; break; 
+case 9: cout << "Äåâÿòüñîò "; break; 
+} 
+switch ((konech1 % 100) / 10) 
+{ 
+case 2: cout << "Äâàäöàòü "; break; 
+case 3: cout << "Òðèäöàòü "; break; 
+case 4: cout << "Ñîðîê "; break; 
+case 5: cout << "Ïÿòäåñÿò "; break; 
+case 6: cout << "Øåñòüäåñÿò "; break; 
+case 7: cout << "Ñåìüäåñÿò "; break; 
+case 8: cout << "Âîñåìäåñÿò "; break; 
+case 9: cout << "Äåâÿíîñòî "; break; 
+} 
+if (konech1 % 100 >= 10 & konech1 % 100 < 20) 
+{ 
+switch (konech1 % 100) 
+{ 
+case 10: cout << "Äåñÿòü"; break; 
+case 11: cout << "Îäèíàäöàòü"; break; 
+case 12: cout << "Äâåíàäöàòü"; break; 
+case 13: cout << "Òðèíàäöàòü"; break; 
+case 14: cout << "×åòûðíàäöàòü"; break; 
+case 15: cout << "Ïÿòíàäöàòü"; break; 
+case 16: cout << "Øåñòíàäöàòü"; break; 
+case 17: cout << "Ñåìíàäöàòü"; break; 
+case 18: cout << "Âîñåìíàäöàòü"; break; 
+case 19: cout << "Äåâÿòíàäöàòü"; break; 
+} 
+} 
+else{ 
+switch (konech1 % 10) 
+{ 
+
+case 1: cout << "Îäèí"; break; 
+case 2: cout << "Äâà"; break; 
+case 3: cout << "Òðè"; break; 
+case 4: cout << "×åòûðå"; break; 
+case 5: cout << "Ïÿòü"; break; 
+case 6: cout << "Øåñòü"; break; 
+case 7: cout << "Ñåìü"; break; 
+case 8: cout << "Âîñåìü"; break; 
+case 9: cout << "Äåâÿòü"; break; 
+} 
+if (konech1 == 0) 
+cout << "Íîëü " << endl; 
+} 
+return 0; 
+} 
+
+int raz(int perv,int vtor,int konech) 
+{ 
+konech = perv - vtor; 
+cout << konech << " "; 
+
+switch (konech / 1000) 
+{ 
+case 1: cout << "Îäíà Òûñÿ÷à "; break; 
+case 2: cout << "Äâå Òûñÿ÷è "; break; 
+case 3: cout << "Òðè Òûñÿ÷è "; break; 
+case 4: cout << "×åòûðå Òûñÿ÷è "; break; 
+case 5: cout << "Ïÿòü Òûñÿ÷ "; break; 
+case 6: cout << "Øåñòü Òûñÿ÷ "; break; 
+case 7: cout << "Ñåìü Òûñÿ÷ "; break; 
+case 8: cout << "Âîñåìü Òûñÿ÷ "; break; 
+case 9: cout << "Äåâÿòü Òûñÿ÷ "; break; 
+} 
+
+switch (konech / 100) 
+{ 
+case 1: cout << "Ñòî "; break; 
+case 2: cout << "Äâåñòè "; break; 
+case 3: cout << "Òðèñòà "; break; 
+case 4: cout << "×åòûðåñòà "; break; 
+case 5: cout << "Ïÿòñîò "; break; 
+case 6: cout << "Øåñîò "; break; 
+case 7: cout << "Ñåìüñîò "; break; 
+case 8: cout << "Âîñåìüñîò "; break; 
+case 9: cout << "Äåâÿòüñîò "; break; 
+} 
+switch ((konech % 100) / 10) 
+{ 
+case 2: cout << "Äâàäöàòü "; break; 
+case 3: cout << "Òðèäöàòü "; break; 
+case 4: cout << "Ñîðîê "; break; 
+case 5: cout << "Ïÿòäåñÿò "; break; 
+case 6: cout << "Øåñòüäåñÿò "; break; 
+case 7: cout << "Ñåìüäåñÿò "; break; 
+case 8: cout << "Âîñåìäåñÿò "; break; 
+case 9: cout << "Äåâÿíîñòî "; break; 
+} 
+if (konech % 100 >= 10 & konech % 100 < 20) 
+{ 
+switch (konech % 100) 
+{ 
+case 10: cout << "Äåñÿòü"; break; 
+case 11: cout << "Îäèíàäöàòü"; break; 
+case 12: cout << "Äâåíàäöàòü"; break; 
+case 13: cout << "Òðèíàäöàòü"; break; 
+case 14: cout << "×åòûðíàäöàòü"; break; 
+case 15: cout << "Ïÿòíàäöàòü"; break; 
+case 16: cout << "Øåñòíàäöàòü"; break; 
+case 17: cout << "Ñåìíàäöàòü"; break; 
+case 18: cout << "Âîñåìíàäöàòü"; break; 
+case 19: cout << "Äåâÿòíàäöàòü"; break; 
+} 
+} 
+else{ 
+switch (konech % 10) 
+{ 
+
+case 1: cout << "Îäèí"; break; 
+case 2: cout << "Äâà"; break; 
+case 3: cout << "Òðè"; break; 
+case 4: cout << "×åòûðå"; break; 
+case 5: cout << "Ïÿòü"; break; 
+case 6: cout << "Øåñòü"; break; 
+case 7: cout << "Ñåìü"; break; 
+case 8: cout << "Âîñåìü"; break; 
+case 9: cout << "Äåâÿòü"; break; 
+} 
+if (konech == 0) 
+cout << "Íîëü " << endl; 
+} 
+return 0; 
+} 
+
+int del(int perv,int vtor,int konech) 
+{ 
+konech = perv / vtor; 
+cout << konech <<" "; 
+
+switch (konech / 1000) 
+{ 
+case 1: cout << "Îäíà Òûñÿ÷à "; break; 
+case 2: cout << "Äâå Òûñÿ÷è "; break; 
+case 3: cout << "Òðè Òûñÿ÷è "; break; 
+case 4: cout << "×åòûðå Òûñÿ÷è "; break; 
+case 5: cout << "Ïÿòü Òûñÿ÷ "; break; 
+case 6: cout << "Øåñòü Òûñÿ÷ "; break; 
+case 7: cout << "Ñåìü Òûñÿ÷ "; break; 
+case 8: cout << "Âîñåìü Òûñÿ÷ "; break; 
+case 9: cout << "Äåâÿòü Òûñÿ÷ "; break; 
+} 
+
+switch (konech / 100) 
+{ 
+case 1: cout << "Ñòî "; break; 
+case 2: cout << "Äâåñòè "; break; 
+case 3: cout << "Òðèñòà "; break; 
+case 4: cout << "×åòûðåñòà "; break; 
+case 5: cout << "Ïÿòñîò "; break; 
+case 6: cout << "Øåñîò "; break; 
+case 7: cout << "Ñåìüñîò "; break; 
+case 8: cout << "Âîñåìüñîò "; break; 
+case 9: cout << "Äåâÿòüñîò "; break; 
+} 
+switch ((konech % 100) / 10) 
+{ 
+case 2: cout << "Äâàäöàòü "; break; 
+case 3: cout << "Òðèäöàòü "; break; 
+case 4: cout << "Ñîðîê "; break; 
+case 5: cout << "Ïÿòäåñÿò "; break; 
+case 6: cout << "Øåñòüäåñÿò "; break; 
+case 7: cout << "Ñåìüäåñÿò "; break; 
+case 8: cout << "Âîñåìäåñÿò "; break; 
+case 9: cout << "Äåâÿíîñòî "; break; 
+} 
+if (konech % 100 >= 10 & konech % 100 < 20) 
+{ 
+switch (konech % 100) 
+{ 
+case 10: cout << "Äåñÿòü"; break; 
+case 11: cout << "Îäèíàäöàòü"; break; 
+case 12: cout << "Äâåíàäöàòü"; break; 
+case 13: cout << "Òðèíàäöàòü"; break; 
+case 14: cout << "×åòûðíàäöàòü"; break; 
+case 15: cout << "Ïÿòíàäöàòü"; break; 
+case 16: cout << "Øåñòíàäöàòü"; break; 
+case 17: cout << "Ñåìíàäöàòü"; break; 
+case 18: cout << "Âîñåìíàäöàòü"; break; 
+case 19: cout << "Äåâÿòíàäöàòü"; break; 
+} 
+} 
+else{ 
+switch (konech % 10) 
+{ 
+
+case 1: cout << "Îäèí"; break; 
+case 2: cout << "Äâà"; break; 
+case 3: cout << "Òðè"; break; 
+case 4: cout << "×åòûðå"; break; 
+case 5: cout << "Ïÿòü"; break; 
+case 6: cout << "Øåñòü"; break; 
+case 7: cout << "Ñåìü"; break; 
+case 8: cout << "Âîñåìü"; break; 
+case 9: cout << "Äåâÿòü"; break; 
+} 
+if (konech == 0) 
+cout << "Íîëü " << endl; 
+} 
+
+return 0; 
+} 
+
+int umno(int perv,int vtor,int konech) 
+{ 
+konech = perv * vtor; 
+cout<<konech<<" "; 
+
+switch (konech / 1000) 
+{ 
+case 1: cout << "Îäíà Òûñÿ÷à "; break; 
+case 2: cout << "Äâå Òûñÿ÷è "; break; 
+case 3: cout << "Òðè Òûñÿ÷è "; break; 
+case 4: cout << "×åòûðå Òûñÿ÷è "; break; 
+case 5: cout << "Ïÿòü Òûñÿ÷ "; break; 
+case 6: cout << "Øåñòü Òûñÿ÷ "; break; 
+case 7: cout << "Ñåìü Òûñÿ÷ "; break; 
+case 8: cout << "Âîñåìü Òûñÿ÷ "; break; 
+case 9: cout << "Äåâÿòü Òûñÿ÷ "; break; 
+} 
+
+switch (konech / 100) 
+{ 
+case 1: cout << "Ñòî "; break; 
+case 2: cout << "Äâåñòè "; break; 
+case 3: cout << "Òðèñòà "; break; 
+case 4: cout << "×åòûðåñòà "; break; 
+case 5: cout << "Ïÿòñîò "; break; 
+case 6: cout << "Øåñîò "; break; 
+case 7: cout << "Ñåìüñîò "; break; 
+case 8: cout << "Âîñåìüñîò "; break; 
+case 9: cout << "Äåâÿòüñîò "; break; 
+} 
+switch ((konech % 100) / 10) 
+{ 
+case 2: cout << "Äâàäöàòü "; break; 
+case 3: cout << "Òðèäöàòü "; break; 
+case 4: cout << "Ñîðîê "; break; 
+case 5: cout << "Ïÿòäåñÿò "; break; 
+case 6: cout << "Øåñòüäåñÿò "; break; 
+case 7: cout << "Ñåìüäåñÿò "; break; 
+case 8: cout << "Âîñåìäåñÿò "; break; 
+case 9: cout << "Äåâÿíîñòî "; break; 
+} 
+if (konech % 100 >= 10 & konech % 100 < 20) 
+{ 
+switch (konech % 100) 
+{ 
+case 10: cout << "Äåñÿòü"; break; 
+case 11: cout << "Îäèíàäöàòü"; break; 
+case 12: cout << "Äâåíàäöàòü"; break; 
+case 13: cout << "Òðèíàäöàòü"; break; 
+case 14: cout << "×åòûðíàäöàòü"; break; 
+case 15: cout << "Ïÿòíàäöàòü"; break; 
+case 16: cout << "Øåñòíàäöàòü"; break; 
+case 17: cout << "Ñåìíàäöàòü"; break; 
+case 18: cout << "Âîñåìíàäöàòü"; break; 
+case 19: cout << "Äåâÿòíàäöàòü"; break; 
+} 
+} 
+else{ 
+switch (konech % 10) 
+{ 
+
+case 1: cout << "Îäèí"; break; 
+case 2: cout << "Äâà"; break; 
+case 3: cout << "Òðè"; break; 
+case 4: cout << "×åòûðå"; break; 
+case 5: cout << "Ïÿòü"; break; 
+case 6: cout << "Øåñòü"; break; 
+case 7: cout << "Ñåìü"; break; 
+case 8: cout << "Âîñåìü";
+
+
+break; 
+case 9: cout << "Äåâÿòü"; break; 
+} 
+if (konech == 0) 
+cout << "Íîëü " << endl; 
+} 
+
+return 0; 
+} 
+
+
+int main() 
+{ 
+setlocale(LC_ALL, "rus"); 
+
+cout << "Äîáðî ïîæàëîâàòü â ïðîãðàììó Êàëüêóëÿòîð " << endl << endl; 
+cout << "Äèàïàçîí îò 0 äî 9999" << endl << endl; 
+
+int perv, znak, vtor, konech; 
+
+cout << "Ââåäèòå ïåðâîå ÷èñëî" << endl; 
+cin >> perv; 
+cout << "Ââåäèòå âòîðîå ÷èñëî" << endl; 
+cin >> vtor; 
+cout << "Ââåäèòå îïåðàöèþ " << endl <<
+"1. Ñëîæåíèå" << endl <<
+"2. Âû÷èòàíèå" << endl <<
+"3. Äåëåíèå" << endl <<
+"4. Óìíîæåíèå" << endl;
+
+cin >> znak; 
+
+switch (znak) 
+{ 
+case 1: 
+sum(perv, vtor, konech); 
+break; 
+case 2: 
+raz(perv, vtor, konech); 
+break; 
+case 3: 
+del(perv, vtor, konech); 
+break; 
+case 4: 
+umno(perv, vtor, konech); 
+break; 
+}
+return 0;
+}
